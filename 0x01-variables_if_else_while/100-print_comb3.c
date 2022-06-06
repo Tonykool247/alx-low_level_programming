@@ -12,14 +12,14 @@ int main(void)
 		for (q = '0'; q <= '9'; q++)
 		{
 			if (p < q)
-			 {
+			{
 			        putchar(p);
 			        putchar(q);
 			        if (p == '8' && q == '9')
 					continue;
 				putchar(',');
 				putchar(' ');
-			 }
+			}
 		}
 	}
 	putchar('\n');
