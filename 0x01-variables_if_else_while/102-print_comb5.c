@@ -5,7 +5,6 @@
  *           ranging from 0-99, separated by a comma followed by a space.
  * Return: Always 0.
  */
-
 int main(void)
 {
 	int num1, num2;
