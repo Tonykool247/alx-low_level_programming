@@ -1,30 +1,38 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_square - prints hashtags to make a square
- * @size: limit
+ * main - prints Fizz for int divisible by 3 and Buzz for 5
  *
- * Return: void
+ * Return: int
  */
 
-void print_square(int size)
+int main(void)
 {
-int i, j;
+int i;
 
-if (size > 0)
+for (i = 1; i <= 100; i++)
 {
-for (i = 0; i < size; i++)
+if (i % 3 == 0 && i % 5 != 0)
 {
-for (j = 0; j < size; j++)
-{
-_putchar('#');
+printf("Fizz");
 }
-_putchar('\n');
+else if (i % 3 != 0 && i % 5 == 0)
+{
+printf("Buzz");
 }
+else if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz");
 }
 else
 {
-_putchar('\n');
+printf("%d", i);
 }
+if (i != 100)
+putchar(' ');
+else
+putchar('\n');
+}
+return (0);
 }
 
